@@ -1,4 +1,4 @@
-package com.empresa.abrasivos;
+package com.empresa.abrasivos.mvc.model;
 
 public class Cliente {
     private String identificacion;
@@ -12,6 +12,9 @@ public class Cliente {
         this.razonSocial = razonSocial;
         this.direccion = direccion;
         this.estado = estado;
+    }
+
+    public Cliente(int identificacion2, String razonSocial2, String direccion2, String estado2) {
     }
 
     public String getIdentificacion() {
@@ -30,5 +33,4 @@ public class Cliente {
         return estado;
     }
 
-    // Otros getters y setters
 }

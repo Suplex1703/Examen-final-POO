@@ -1,4 +1,4 @@
-package com.empresa.abrasivos;
+package com.empresa.abrasivos.mvc.model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,5 +24,9 @@ public class AsesorComercial {
 
     public List<CotizacionCompra> getCotizaciones() {
         return cotizaciones;
+    }
+
+    public List<Cliente> getClientes() {
+        return clientes;
     }
 }

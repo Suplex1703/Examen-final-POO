@@ -1,4 +1,4 @@
-package com.empresa.abrasivos;
+package com.empresa.abrasivos.mvc.model;
 
 import java.util.List;
 
@@ -9,7 +9,6 @@ public class CotizacionCompra {
     private double descuento;
     private String estado;
     private int listaPrecios;
-
 
     public CotizacionCompra(Cliente cliente, String fechaOrden, List<Producto> productos, double descuento, String estado) {
         this.cliente = cliente;
@@ -55,7 +54,7 @@ public class CotizacionCompra {
                 break;
             // Puedes agregar más casos si es necesario
             default:
-                descuentoPorcentaje = 0.0; 
+                descuentoPorcentaje = 0.0;
                 break;
         }
 
@@ -75,4 +74,27 @@ public class CotizacionCompra {
         return estado;
     }
 
+    public List<Producto> getProductos() {
+        return productos;
+    }
+
+    public void setProductos(List<Producto> productos) {
+        this.productos = productos;
+    }
+
+    public double getDescuento() {
+        return descuento;
+    }
+
+    public void setDescuento(double descuento) {
+        this.descuento = descuento;
+    }
+
+    public int getListaPrecios() {
+        return listaPrecios;
+    }
+
+    public void setListaPrecios(int listaPrecios) {
+        this.listaPrecios = listaPrecios;
+    }
 }
